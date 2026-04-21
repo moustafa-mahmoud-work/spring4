@@ -9,7 +9,7 @@ version = "0.0.1-SNAPSHOT"
 
 java {
 	toolchain {
-		languageVersion = JavaLanguageVersion.of(25)
+		languageVersion = JavaLanguageVersion.of(24)
 	}
 }
 
@@ -18,8 +18,8 @@ repositories {
 }
 
 dependencies {
-	implementation("org.springframework.boot:spring-boot-starter-webmvc")
-	testImplementation("org.springframework.boot:spring-boot-starter-webmvc-test")
+	implementation("org.springframework.boot:spring-boot-starter-web")
+	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
